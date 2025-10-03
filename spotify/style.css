@@ -1,0 +1,343 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main {
+    display: flex;
+    height: 100vh;
+    
+}
+.sidebar {
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+
+}
+.main-content {
+    background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(26, 24, 24) 100%);
+    flex: 1;
+    overflow-y: auto;      
+    overflow-x: hidden;    
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 76px;
+    scrollbar-width: none;   
+    -ms-overflow-style: none; 
+}
+
+.main-content::-webkit-scrollbar {
+    display: none;          
+}
+.music-player {
+    background-color: rgb(0, 0, 0);
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    height: 72px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+}
+.nav-option:hover{
+    line-height: 2.5rem;
+    opacity: 1;
+}
+
+.nav-option i {
+    line-height: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.sidebar {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: calc(100vh - 225px);
+    overflow: auto;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    opacity: 0.7;
+}
+.library-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icon {
+    opacity: 0.7;
+    display: flex;
+}
+
+.icon i {
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+.icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.playlist-card {
+    background-color: #1e1e1e;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.playlist-title{
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.playlist-description {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #b3b3b3;
+}
+
+.playlist-card button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2rem;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    width: fit-content;
+    height: 2.5rem;
+}
+
+
+
+
+.app-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 1rem;
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+}
+
+.nav-arrows {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-arrows .backward {
+    background-color: #232222;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-arrows .forward {
+    background-color: #1f1e1e;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-arrows img {
+    width: 20px;
+    height: 20px;
+}
+
+.app-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.explore-premium {
+    background-color: #ffffff;
+    border-radius: 2rem;
+    border:none;
+    width: fit-content;
+    height: 2.5rem;
+    padding: 0 1.2rem;  
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.install {
+    background-color: black;
+    border-radius: 2rem;
+    border:none;
+    width: fit-content;
+    height: 2.4rem;
+    padding: 0 1rem;  
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.install img {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+.user-profile {
+    background-color: #1f1e1e;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-profile img {
+    width: 24px;
+    height: 24px;
+}
+
+.recently-played {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.recently-played h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card {
+    background-color: #181818;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.podcasts {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.podcast-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: -0.5rem;
+}
+
+.player-buttons {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.player-buttons img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.player-progress {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: small;
+}
+.progress-line {
+    flex: 1;
+    height: 2px;
+    background-color: #e9e4e4;
+    border-radius: 2px;
+    position: relative;
+}
